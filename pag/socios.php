@@ -1,7 +1,7 @@
 <?php
 require __DIR__ . '/../includes/socios/create.php';
 session_start();
-// if(!isset($_SESSION['nombres'])){
+// if(!isset($_SESSION['nombre'])){
 //     header("Location: ../index.php");
 //     exit;
 // }
@@ -47,8 +47,8 @@ while ($socio = $socios->fetch_assoc()) {
     <td><?php echo $socio['numero']; ?></td>
     
     <td>
-        <a href="../includes/socios/update.php?id=<?php echo $socio['id']; ?>">Actualizar</a>
-        <a href="../includes/socios/delete.php?id=<?php echo $socio['id']; ?>"onclick = "return confirmar()">Eliminar</a>
+        <a href="../includes/socios/update.php?id=<?php echo $socio['cedula']; ?>">Actualizar</a>
+        <a href="../includes/socios/delete.php?cedula=<?php echo $socio['cedula']; ?>"onclick = "return confirmar()">Eliminar</a>
     </td>
 </tr>
 

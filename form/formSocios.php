@@ -23,7 +23,7 @@ $socios = obtener_socios();
 
 if($errores) {
     foreach ($errores as $error) {
-        echo "<p>" . $error . "<p>";
+        echo "<p>" . $error . "</p>";
     }   
 }
     ?>
@@ -38,7 +38,7 @@ if($errores) {
 <label for= "last_name">Apellidos:</label>
 <input type="text" name="last_name" id="last_name"> <br>
 
- <label for="email">Direccion</label>
+ <label for="address">Direccion</label>
 <input type="text" name="address" id="address"> <br>
 
 <label for="phone">Numero</label>

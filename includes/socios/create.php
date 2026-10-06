@@ -75,11 +75,11 @@ function create_socio (){
         $resultado = mysqli_query($conex, $query);
         $message = ($resultado) ? 0 : 1;
 
-        header("Location: ../pag/socio.php?state=$message");
+        header("Location: ../pag/socios.php?state=$message");
         exit;
         
     }else{
-        return $erroes;
+        return $errores;
     }
  }
 

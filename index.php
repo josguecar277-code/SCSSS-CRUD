@@ -59,10 +59,10 @@
     <input type="password" name="pw-form">
 
     <input type="submit" value="Enviar" name="agregar"> 
-        <h1>Conexion con My SQL</h1>
+        <!-- <h1>Conexion con My SQL</h1> -->
 
 </form>
-        <table>
+        <!-- <table>
             <thead>
                 <tr>
                     <th>Nombres</th>
@@ -84,7 +84,7 @@
             }
             ?>
         </tbody>
-    </table>
+    </table> -->
 
 </body>
 </html>

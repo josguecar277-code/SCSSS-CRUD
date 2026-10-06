@@ -7,7 +7,8 @@
  $resultado = mysqli_query($conex, $query);
 //  var_dump($resultado);
 //  foreach ( $resultado as $data) {
-//     var_dump($data);
+//    
+ var_dump($data);
 //  }
 
 $state = ($resultado) ? 4 : 5 ;
