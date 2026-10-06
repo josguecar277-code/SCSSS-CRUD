@@ -8,7 +8,7 @@
     "html"
   ],
   "license": "ISC",
-  "author": "\"Fabio Lancheros\"",
+  "author": "\"Jonathan Guerrero\"",
   "type": "module",
   "main": "index.js",
   "scripts": {
