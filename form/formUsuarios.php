@@ -60,6 +60,7 @@ if($errores) {
 <button type="submit" name="agregar">Guardar Usuario</button>
 </form>
 
+<a href="../pag/users.php">Volver a Usuarios</a>
  
 </body>
 </html>

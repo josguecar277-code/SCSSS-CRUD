@@ -21,7 +21,9 @@ $usuarios = obtener_usuarios();
     <title>Usuarios</title>
 </head>
 <body>
+<h1>Usuarios</h1>
 
+<a href="../form/formUsuarios.php">+ Nuevo Usuario</a>
 <tbody>
 <table>
     <thead>

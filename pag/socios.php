@@ -17,7 +17,9 @@ $socios = obtener_socios();
     <title>Socios</title>
 </head>
 <body>
-    
+    <h1>Clientes</h1>
+
+    <a href="../form/formSocios.php">+ Nuevo Socio</a><br>
 <tbody>
 <table>
     <thead>
@@ -53,5 +55,15 @@ while ($socio = $socios->fetch_assoc()) {
 <?php
 }
 ?>
+</tbody>
+</table>
+<?php
+echo '<a href = "dashboard.php">Volver al panel Principal </a>';
+?>
+<script> 
+function  confirmar(){
+    return confirm('Seguro de eliminar los datos?');
+}
+</script>
 </body>
 </html>
