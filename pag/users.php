@@ -30,7 +30,7 @@ $usuarios = obtener_usuarios();
         <tr>
         <th>Cedula</th>
         <th>Nombre</th>
-        <th>Apellido</th>
+        <th>Apellido</th>  
         <th>Email</th>
         <th>Telefono</th>
         <th>Opciones</th>

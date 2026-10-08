@@ -36,6 +36,7 @@ $socios = obtener_socios();
 </tbody>
 <?php
 while ($socio = $socios->fetch_assoc()) {
+   
 
 ?>
 
@@ -47,7 +48,7 @@ while ($socio = $socios->fetch_assoc()) {
     <td><?php echo $socio['numero']; ?></td>
     
     <td>
-        <a href="../includes/socios/update.php?id=<?php echo $socio['cedula']; ?>">Actualizar</a>
+        <a href="../includes/socios/update.php?cedula=<?php echo $socio['cedula']; ?>">Actualizar</a>
         <a href="../includes/socios/delete.php?cedula=<?php echo $socio['cedula']; ?>"onclick = "return confirmar()">Eliminar</a>
     </td>
 </tr>

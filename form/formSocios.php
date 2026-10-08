@@ -30,7 +30,7 @@ if($errores) {
 
     <form action="" method="post">
  <label for="cedula">Cedula</label>
- <input type="text" name="cedula" id="cedula"> <br>
+ <input type="text" name="cedula" id="cedula"><br>
 
 <label for= "name">Nombres:</label>
 <input type="text" name="name" id="name"> <br>

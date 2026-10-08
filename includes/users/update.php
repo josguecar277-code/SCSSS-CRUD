@@ -29,11 +29,16 @@ var_dump($password, $c_password);
         $errores[] = "Las contraseñas no coinciden";
     }
  
-    if (!$errores){
+   
+
+     if (!$errores){
+
         $query = "UPDATE usuarios SET cedula = '$cedula', nombre = '$name', apellido = '$last_name', email = '$email', numero = '$phone'";
+        
         if ($password){
             $query .= ", contrasena = '" . password_hash($password, PASSWORD_BCRYPT) . "'";
         }
+        
         $query .= " WHERE id = " . $idUser . ";";
  
         $resultado = mysqli_query($conex, $query);
