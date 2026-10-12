@@ -19,6 +19,9 @@ if(isset($_POST['editar'])){
     if(!$name || !$n_amarre || !$c_amarre || !$socio){
         $errores[] = "Todos los campos son obligatorios";
     }
+    if ($c_amarre && !is_numeric($c_amarre)){
+    $errores[] = "La cuota debe ser un numero";
+}
 
     if(!$errores){
         $query = " UPDATE barcos SET nombre = '$name', n_amarre = '$n_amarre', cuota_amarre = '$c_amarre', socio_cedula = '$socio' WHERE matricula = '$matricula'; ";

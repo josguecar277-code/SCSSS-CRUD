@@ -3,7 +3,7 @@ require __DIR__ . '/../includes/barcos/create.php';
 session_start();
 
 if(!isset($_SESSION['nombre'])){
-    header("Location: ../index.php");
+    header("Location: ../login.php");
     exit;
 }
 

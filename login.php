@@ -4,8 +4,9 @@
     require './db/conexion.php';
     // require './db/obtenerUsuarios.php';
 
-    $usuarios = obtener_usuarios();
-    $addUser= obtener_usuarios();
+    // $usuarios = obtener_usuarios();
+    // $addUser= obtener_usuarios();
+
     if (isset($_POST['agregar'])){
         $userForm = $_POST['name-form'];
         $pwForm =$_POST['pw-form'];
@@ -34,6 +35,8 @@
                 echo"Usuario o contraseña errada";
             }
 
+        }else{
+            echo "Usuario o contraseña errada";
         }
     
     }
@@ -48,8 +51,7 @@
         <title>Ejemplo conexion DB</title>
     </head>
     <body>
-
-
+        
     <h1>Login</h1>
     <form action="" method="post">
     <label for = "name-form">Nombre de Usuario</label>

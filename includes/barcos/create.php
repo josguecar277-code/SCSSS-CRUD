@@ -39,6 +39,8 @@ function create_barcos (){
     }
     if (!$c_amarre) {
         $errores [] = "Ingresa la Cuota de Amarre";
+    }else if(!is_numeric($c_amarre)){
+        $errores [] = "La Cuota debe ser un numero";
     }
     if (!$socio) {
         $errores []= "Seleccione un Socio";

@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 require "db/conexion.php";
 
 
@@ -27,4 +27,4 @@ if(isset($_POST['validar-usuario'])) {
         echo "Usuario o contraseña errada";
     }
 }
-?>
+?> -->
