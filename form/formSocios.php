@@ -6,7 +6,7 @@ if (isset($_POST['agregar'])){
     $errores = create_socio();
 }
 
-$socios = obtener_socios();
+// $socios = obtener_socios();
 ?>
 
 
@@ -42,7 +42,7 @@ if($errores) {
 <input type="text" name="address" id="address"> <br>
 
 <label for="phone">Numero</label>
-  <input type="text" name="phone" id="phone"> <br>
+<input type="text" name="phone" id="phone"> <br>
 
 
 

@@ -1,10 +1,11 @@
 <?php
 require __DIR__ . '/../includes/socios/create.php';
 session_start();
-// if(!isset($_SESSION['nombre'])){
-//     header("Location: ../index.php");
-//     exit;
-// }
+
+if(!isset($_SESSION['nombre'])){
+    header("Location: ../index.php");
+    exit;
+}
 
 $socios = obtener_socios();
 ?>
@@ -51,7 +52,7 @@ while ($socio = $socios->fetch_assoc()) {
         <a href="../includes/socios/update.php?cedula=<?php echo $socio['cedula']; ?>">Actualizar</a>
         <a href="../includes/socios/delete.php?cedula=<?php echo $socio['cedula']; ?>"onclick = "return confirmar()">Eliminar</a>
     </td>
-</tr>
+</tr> 
 
 <?php
 }
@@ -66,5 +67,6 @@ function  confirmar(){
     return confirm('Seguro de eliminar los datos?');
 }
 </script>
+
 </body>
 </html>
