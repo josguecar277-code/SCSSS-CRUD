@@ -1,0 +1,125 @@
+
+
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+ 
+.login {
+  background: linear-gradient(to bottom,
+     #1a1f26 0%, 
+     #111418 100%);
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 2rem;
+  align-items: center;
+  min-height: 80rem;
+  
+
+  
+}
+ 
+.formulario {
+  width: 90%;
+  text-align: center;
+  max-width: 32rem;
+  padding: 10rem 5rem; 
+ 
+  border-radius: 2rem;
+  background-color: #1E232A;
+  box-shadow: 0 0 2rem rgba(40, 65, 255, 0.89), 0 0 40px rgba(117, 39, 234, 0.6);
+  border: 1px solid transparent;
+
+  h1 {
+    margin-bottom: 3rem;
+    // margin: 0;
+    color: v.$gris;
+    align-items: center;
+    text-transform: uppercase;
+    
+  }
+
+ 
+    
+}
+  .titulo h1 {
+    // margin-bottom: 3rem;
+    margin: 0;
+    color: aquamarine;
+    align-items: center;
+    
+
+   
+    
+  }
+
+  // .panel-campos {
+   
+  //   align-items: center;
+  //   display: block;
+  //   margin-bottom: .8rem;
+  //   font-size: 1.6rem;
+  // }
+ 
+  .campos {
+    align-items: center;
+    margin: 0% auto;
+    text-align: center;
+    font-size: 1.5rem;
+   
+
+    label{
+   font-weight: bold;
+   font-size: 1.8rem;
+   color: v.$gris;
+  
+    text-align: center;
+    }
+    input {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin-bottom: 2rem;
+      border-radius: 2%;
+      padding: 1rem;
+      border: 1px solid;
+      border-radius: 1rem;
+    }
+  
+  }
+
+//   @include m.tablet {
+//     padding: 5rem 4rem;
+//   }
+// }
+ 
+.boton {
+  width: 60%;
+  padding: 1rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: v.$gris;
+  font-family: inherit;
+  // color: v.$blanco;
+  background: linear-gradient(80deg, #3039ea 0%, #6a1cdf 100%);
+
+  border: none;
+  border-radius: .5rem;
+  // cursor: pointer;
+ 
+  &:hover {
+    opacity: .5;
+  }
+  
+  }
+
+
+ 
+// .alerta {
+//   margin: 0 0 2rem 0;
+//   padding: 1rem 1.5rem;
+//   font-size: 1.6rem;
+//   color: v.$rosa;
+//   background-color: rgba(v.$rosa, .12);
+//   border-radius: .5rem;
+// }
+

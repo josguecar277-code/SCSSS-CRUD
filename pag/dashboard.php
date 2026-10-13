@@ -6,6 +6,7 @@
     <title>Dashboard</title>
 </head>
 <body>
+    
     <h1>Dashboard</h1>
     <a href="users.php">Usuarios</a>
     <a href="socios.php">Clientes</a>

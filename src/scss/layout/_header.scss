@@ -1,5 +1,5 @@
-@use "base/variables" as v;
-@use "base/mixins" as m;
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
 
 .header {
   background-color: v.$azul;
@@ -24,25 +24,27 @@
   }
 }
 
-.navegacion-principal {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
+// .navegacion-principal {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   gap: 2rem;
+// }
 
-  @include m.tablet {
-    flex-direction: row;
-  }
+//   // @include m.tablet {
+//   //   flex-direction: row;
+//   // }
 
   a {
-    color: v.$blanco;
+    color: v.$gris;
+    text-decoration: dashed;
     font-size: 1.5rem;
 
     &:hover {
-      color: v.$rosa;
+      color: blueviolet;
     }
   }
-}
+
 
 // .navegacion-principal a:hover {
 //   color: v.$rosa;
