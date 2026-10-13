@@ -49,6 +49,9 @@ if(isset($_POST['editar'])){
     ?>
 
 <form action="" method="post">
+    <label for="name">Matricula</label>
+    <input type="text" name="matricula" id="matricula" value="<?php echo $barco ['matricula'];?>"><br>
+
     <label for="name">Nombre</label>
     <input type="text" name="name" id="name" value="<?php echo $barco ['nombre'];?>"><br>
 

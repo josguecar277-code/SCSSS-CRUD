@@ -29,8 +29,8 @@ if($errores) {
 ?>
 <form action="" method="post">
     
-    <!-- <label for="matricula">Matricula</label>
-    <input type="text" name="matricula" id="matricula"><br>  // la matricula es auti_increment,la genera mysql y no pide en el form -->
+    <label for="matricula">Matricula</label>
+    <input type="text" name="matricula" id="matricula"><br>  
 
     <label for="name">Nombre</label>
     <input type="text" name="name" id="name"><br>

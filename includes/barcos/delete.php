@@ -1,7 +1,7 @@
 <?php
 include "../../db/conexion.php";
 
-$matricula = $_GET ['matricula'];
+$matricula = mysqli_real_escape_string ($conex, $_GET ['matricula']);
 $query = "DELETE FROM barcos WHERE matricula = '".$matricula."';";
 $resultado = mysqli_query($conex, $query);
 

@@ -20,17 +20,24 @@ function create_barcos (){
     require __DIR__ . '/../../db/conexion.php';
 
     $errores = [];
+    $matricula = "";
     $name = "";
     $n_amarre = "";     
     $c_amarre = "";
     $socio = "";
 
     if (isset($_POST['agregar'])){
+        $matricula = mysqli_real_escape_string($conex,$_POST['matricula']);
         $name = mysqli_real_escape_string($conex,$_POST['name']);
         $n_amarre = mysqli_real_escape_string($conex,$_POST['n_amarre']);
         $c_amarre = mysqli_real_escape_string($conex,$_POST['c_amarre']);
         $socio = mysqli_real_escape_string($conex,$_POST['socio']);
 
+    if (!$matricula) {
+        $errores [] = "Ingrese una Matricula";
+    } elseif (strlen($matricula) > 15) {
+    $errores[] = "La matricula no puede tener mas de 15 caracteres";
+    } 
     if (!$name) {
         $errores [] = "Ingrese un Nombre";
     }
@@ -53,7 +60,7 @@ function create_barcos (){
     }
 
     if(!$errores) {
-        $query  = " INSERT INTO barcos (nombre, n_amarre, cuota_amarre, socio_cedula) VALUES ('".$name."', '".$n_amarre."', '".$c_amarre."', '".$socio."')";
+        $query  = " INSERT INTO barcos (matricula, nombre, n_amarre, cuota_amarre, socio_cedula) VALUES ('".$matricula."','".$name."', '".$n_amarre."', '".$c_amarre."', '".$socio."')";
 
         $resultado = mysqli_query($conex, $query);
         $message = ($resultado) ? 0 : 1;
