@@ -60,7 +60,7 @@ function create_barcos (){
     }
 
     if(!$errores) {
-        $query  = " INSERT INTO barcos (matricula, nombre, n_amarre, cuota_amarre, socio_cedula) VALUES ('".$matricula."','".$name."', '".$n_amarre."', '".$c_amarre."', '".$socio."')";
+        $query  = " INSERT INTO barcos (matricula, nombre, n_amarre, cuota_amarre, socio_cedula) VALUES ('".$matricula."', '".$name."', '".$n_amarre."', '".$c_amarre."', '".$socio."')";
 
         $resultado = mysqli_query($conex, $query);
         $message = ($resultado) ? 0 : 1;
