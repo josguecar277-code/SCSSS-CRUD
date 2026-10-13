@@ -2,11 +2,26 @@
 
 @use "../base/variables" as v;
 @use "../base/mixins" as m;
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', 'Roboto', sans-serif;
+  
+  
+}
  
 .login {
-  background: linear-gradient(to bottom,
-     #1a1f26 0%, 
-     #111418 100%);
+  background: 
+    linear-gradient(rgba(11, 15, 25, 0.85)), 
+    url('../../fondo-barcos.png'); 
+
+  background-size: cover;        
+  background-position: center;   
+  background-repeat: no-repeat;  
+ 
   display: flex;
   justify-content: center;
   margin: 0;
@@ -114,12 +129,5 @@
 
 
  
-// .alerta {
-//   margin: 0 0 2rem 0;
-//   padding: 1rem 1.5rem;
-//   font-size: 1.6rem;
-//   color: v.$rosa;
-//   background-color: rgba(v.$rosa, .12);
-//   border-radius: .5rem;
-// }
+
 
