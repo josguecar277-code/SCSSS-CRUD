@@ -4,9 +4,9 @@ function obtener_salidas (){
     try{
         require __DIR__ . '/../../db/conexion.php';
 
-        $sql = "SELECT salidas.*, barcos.nombre,
+        $sql = "SELECT salidas.*, barcos.nombre
          FROM salidas
-         INNER JOIN barcos ON salidas.barcos_matricula = barco_matricula;";
+         INNER JOIN barcos ON salidas.barcos_matricula = barco.matricula;";
         
         $query = mysqli_query($conex, $sql);
 
@@ -43,14 +43,15 @@ function create_salidas (){
     if (!$barco) {
         $errores []= "Seleccione un Barco";
     }else {
-         $query = " SELECT * FROM salidas WHERE idSalida = '".$barco."'; ";
+         $query = " SELECT * FROM barcos WHERE matricula = '".$barco."'; ";
          $resultado = mysqli_query($conex, $query);
+
         if (!$resultado->num_rows){
         $errores[] = "El Barco no existe";
         }
     }
     if(!$errores) {
-        $query  = " INSERT INTO salidas (fecha, hora, destino, barco) VALUES ('".$fecha."', '".$hora."', '".$destino."', '".$barco."')";
+        $query  = " INSERT INTO salidas (fecha, hora, destino, barcos_matricula) VALUES ('".$fecha."', '".$hora."', '".$destino."', '".$barco."')";
 
         $resultado = mysqli_query($conex, $query);
         $message = ($resultado) ? 0 : 1;
@@ -59,6 +60,7 @@ function create_salidas (){
         exit;
     }
 }
+return $errores;
 }
 
 ?>

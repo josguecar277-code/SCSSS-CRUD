@@ -25,6 +25,7 @@ if(isset($_POST['editar'])){
 
     if(!$errores){
         $query = " UPDATE barcos SET nombre = '$name', n_amarre = '$n_amarre', cuota_amarre = '$c_amarre', socio_cedula = '$socio' WHERE matricula = '$matricula'; ";
+        
     $resultado = mysqli_query($conex, $query);
     $state = ($resultado) ? 2 : 3;
     header("Location: ../../pag/barcos.php?state=$state");

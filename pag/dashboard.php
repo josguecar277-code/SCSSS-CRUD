@@ -11,7 +11,7 @@
     <a href="users.php">Usuarios</a>
     <a href="socios.php">Clientes</a>
     <a href="barcos.php">Barcos</a>
-    <a href="">Salida</a>
+    <a href="salidas.php">Salida</a>
     <a href = "cerrarSesion.php">Cerrar sesion</a>
 </body>
 </html>
